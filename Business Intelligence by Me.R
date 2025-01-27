@@ -113,6 +113,7 @@ category_contribution <- data %>%
 
 # Lihat hasilnya
 head(category_contribution)
+pie(table(category_contribution))
 
 # Visualisasi kontribusi kategori
 ggplot(category_contribution, aes(x = reorder(Category, -Total_Amount), y = Total_Amount, fill = Category)) +
